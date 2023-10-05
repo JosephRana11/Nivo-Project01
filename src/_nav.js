@@ -1,6 +1,10 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
+  cibDigitalOcean,
+  cibGraphcool,
+  cibNodeJs,
+  cilBarChart,
   cilBell,
   cilCalculator,
   cilChartPie,
@@ -25,6 +29,58 @@ const _nav = [
       color: 'info',
       text: 'NEW',
     },
+  },
+  {
+    component: CNavTitle,
+    name: 'NivoGraphs',
+  },
+  {
+    component: CNavItem,
+    name: 'Bar Chart',
+    to: '/nivobar',
+    icon: <CIcon icon={cilBarChart} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Pie Chart',
+    to: '/nivopie',
+    icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Box Plot',
+    to: '/nivoboxplot',
+    icon: <CIcon icon={cibGraphcool} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Node',
+    to: '/nivonode',
+    icon: <CIcon icon={cibNodeJs} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Ocean Node',
+    to: '/nivooceannode',
+    icon: <CIcon icon={cibDigitalOcean} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Funnel Graph',
+    to: '/nivofunnelgraph',
+    icon: <CIcon icon={cilBarChart} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Bullet Graph',
+    to: '/nivobulletgraph',
+    icon: <CIcon icon={cilBarChart} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'Area Bump',
+    to: '/nivoareabump',
+    icon: <CIcon icon={cilBarChart} customClassName="nav-icon" />,
   },
   {
     component: CNavTitle,

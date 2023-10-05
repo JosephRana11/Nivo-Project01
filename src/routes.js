@@ -1,6 +1,14 @@
 import React from 'react'
+import NivoBoxPlot from './views/nivo/boxplot'
+import NivoNode from './views/nivo/node'
+import OceanNode from './views/nivo/oceannode'
+import AreaBump from './views/nivo/areabump'
+import FunnelGraph from './views/nivo/funnelgraph'
+import BulletGraph from './views/nivo/bulletgraph'
 
 const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
+const NivoBar = React.lazy(() => import('./views/nivo/bar'))
+const NivoChart = React.lazy(()=> import('./views/nivo/piechart'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
 
@@ -53,6 +61,14 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
+  { path: '/nivobar', name: 'NivoBar', element: NivoBar },
+  { path: '/nivoboxplot', name: 'NivoBoxplot', element: NivoBoxPlot },
+  { path: '/nivopie', name: 'NivoChart', element: NivoChart },
+  { path: '/nivooceannode', name: 'NivoOceanNode', element: OceanNode },
+  { path: '/nivonode', name: 'NivoNode', element: NivoNode },
+  { path: '/nivoareabump', name: 'AreaBump', element: AreaBump },
+  { path: '/nivofunnelgraph', name: 'Funnel Graph', element: FunnelGraph },
+  { path: '/nivobulletgraph', name: 'Bullet Graph', element: BulletGraph },
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
